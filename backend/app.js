@@ -11,7 +11,7 @@ app.use(cookieParser());
 
 app.use(
     cors({
-      origin: "http://localhost:5173", 
+      origin: "http://backend-frontend-3dq5.vercel.app", 
       credentials: true, 
     })
   );

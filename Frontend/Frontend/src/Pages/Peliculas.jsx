@@ -31,7 +31,7 @@ const Peliculas = ({ refreshMovies }) => {
     }
 
     try {
-      await axios.post('http://localhost:4000/api/PeliRoutes', formData, {
+      await axios.post('https://backend-frontend-qrg6.onrender.com/api/PeliRoutes', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setMovie({

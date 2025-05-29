@@ -21,7 +21,7 @@ const Empleados = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      await axios.post('http://localhost:4000/api/empleadoRoutes', empleado, {
+      await axios.post('https://backend-frontend-qrg6.onrender.com/api/empleadoRoutes', empleado, {
         headers: { 'Content-Type': 'application/json' },
       });
       setEmpleados({

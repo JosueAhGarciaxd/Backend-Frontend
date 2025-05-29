@@ -17,7 +17,7 @@ const Clientes = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      await axios.post('http://localhost:4000/api/ClienteRoutes', cliente, {
+      await axios.post('https://backend-frontend-qrg6.onrender.com/api/ClienteRoutes', cliente, {
         headers: { 'Content-Type': 'application/json' },
       });
       setCliente({
